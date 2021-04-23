@@ -6,30 +6,42 @@ from flask import abort, redirect, url_for, make_response
 
 app = Flask(__name__)
 
+
 @app.route('/')
-def home(): 
+def index(): 
     return render_template("index.html")
+
 
 @app.route("/about")
 def about():
-    return app.send_static_file("about.html")
+    return render_template('about.html')
+
 
 @app.route("/contact")
 def contact():
-    return app.send_static_file("contact.html")
+    return render_template('contact.html')
+
 
 @app.route("/gallery")
 def gallery():
-    return app.send_static_file("gallery.html")
+    return render_template('gallery.html')
+
 
 @app.route('/error_denied')
 def error_denied():
     abort(401)
 
+
 @app.route('/error_internal')
 def error_internal():
     abort(505)
 
+
 @app.route('/error_not_found')
 def error_not_found():
     abort(404)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+

@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css', v=2) }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1>Contact me </h1>
+    <div class="link"><a href="#">My Email</a></div>
+    <div class="link"><a href="{{ url_for('index') }}">Back to Home</a></div>
+</body>
+</html>

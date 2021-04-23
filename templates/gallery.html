@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css', v=2) }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1>This is a gallery</h1>
+    <div class="container">
+        <div class="img">
+            <img height="300" src="{{ url_for('static', filename='cat1.jpg') }}" alt="Cat1">
+        </div>
+        <div class="img">
+            <img height="300" src="{{ url_for('static', filename='cat2.jpg') }}" alt="Cat2">
+        </div>
+        <div class="img">
+            <img height="300" src="{{ url_for('static', filename='cat3.jpg') }}" alt="Cat3">
+        </div>
+    </div>
+
+    <div class="link"><a href="{{ url_for('index') }}">Back to Home</a></div>
+</body>
+</html>
