@@ -3,14 +3,44 @@
 Gallery
 {% endblock %}
 {% block content %}
-<h1>This is a gallery</h1>
-<div class="img">
-    <img height="300" src="{{ url_for('static', filename='cat1.jpg') }}" alt="Cat1">
-</div>
-<div class="img">
-    <img height="300" src="{{ url_for('static', filename='cat2.jpg') }}" alt="Cat2">
-</div>
-<div class="img">
-    <img height="300" src="{{ url_for('static', filename='cat3.jpg') }}" alt="Cat3">
+<div class="container">
+    <h1>This is a gallery</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="row">
+                <a href="{{ url_for('static', filename='img1.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='img1_600.jpg') }}" class="img-fluid gallery">
+                </a>
+                <a href="{{ url_for('static', filename='img2.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='img2_600.jpg') }}" class="img-fluid gallery">
+                </a>
+                <a href="{{ url_for('static', filename='cat4.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='cat4_600.jpg') }}" class="img-fluid gallery">
+                </a>
+            </div>
+            <div class="row">
+                <a href="{{ url_for('static', filename='img3.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='img3_600.jpg') }}" class="img-fluid gallery">
+                </a>
+                <a href="{{ url_for('static', filename='img4.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='img4_600.jpg') }}" class="img-fluid gallery">
+                </a>
+                <a href="{{ url_for('static', filename='img5.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='img5_600.jpg') }}" class="img-fluid gallery">
+                </a>
+            </div>
+            <div class="row">
+                <a href="{{ url_for('static', filename='cat1.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='cat1_600.jpg') }}" class="img-fluid gallery">
+                </a>
+                <a href="{{ url_for('static', filename='cat3.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='cat3_600.jpg') }}" class="img-fluid gallery">
+                </a>
+                <a href="{{ url_for('static', filename='cat5.jpg') }}" data-lightbox="imgs" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="{{ url_for('static', filename='cat5_600.jpg') }}" class="img-fluid gallery">
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
