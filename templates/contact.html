@@ -5,7 +5,9 @@ Contact
 {% block content %}
 <div class="container">
 <form class="form-signin">
-    <h1 class="h3 mb-3 fw-normal">Please send your opinion</h1>
+    <div class="head">
+      <h1 class="h3 mb-3 fw-normal ">Please send your comment</h1>
+    </div>
     <div class="form-floating">
         <input type="text" class="form-control" id="floatingNickname" placeholder="Nickname">
         <label for="floatingNickname">Nickname</label>
@@ -21,6 +23,6 @@ Contact
 
     <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
   </form>
-  <p>You can check my repositories on <span class="link"><a href="https://github.com/kiradpro">Github</a></span></p>
+  <p class="repositories">You can check my repositories on <span class="link"><a href="https://github.com/kiradpro">Github</a></span></p>
 </div>
 {% endblock %}

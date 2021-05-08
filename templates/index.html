@@ -5,18 +5,18 @@ Home page
 {% block content %}
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
         <img src="{{ url_for('static', filename='contact.jpg') }}">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <h1>Wish time.</h1>
+            <p>You can leave your comment here.</p>
             <p><a class="btn btn-lg btn-primary" href="{{ url_for('contact') }}">Write your comment</a></p>
           </div>
         </div>
@@ -26,19 +26,19 @@ Home page
         <img src="{{ url_for('static', filename='about.jpg') }}">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <h1>About us.</h1>
+            <p>If you do not understand why you are here, read about us.</p>
             <p><a class="btn btn-lg btn-primary" href="{{ url_for('about') }}">Learn more</a></p>
           </div>
         </div>
       </div>
-      <div class="carousel-item active">
+      <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
         <img src="{{ url_for('static', filename='img1.jpg') }}">
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <h1>That's amazing!</h1>
+            <p>Check out great photos of our brilliant photographers.</p>
             <p><a class="btn btn-lg btn-primary" href="{{ url_for('gallery') }}">Browse gallery</a></p>
           </div>
         </div>
@@ -54,8 +54,9 @@ Home page
     </button>
   </div>
 <div class="container">
-    <h1>Home page</h1>
-    <p>It's my portfolio.</p>
-    <p>I'm WSB student.</p>
+  <div class="head">
+    <h1>It's my portfolio.</h1>
+    <h2>I'm WSB student.</h2>
+  </div>
 </div>
 {% endblock %}

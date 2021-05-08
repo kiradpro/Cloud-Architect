@@ -4,9 +4,15 @@ About
 {% endblock %}
 {% block content %}
 <div class="container">
-<h1>About me </h1>
-    <p>
+    <div class="head">
+        <h1>About me </h1>
+    <div class="row justify-content-center">
+        <img style="margin-bottom: 10px;" class="col-sm-1" src="{{ url_for('static', filename='PepeHappy.png') }}">
+    </div>
+
+    <h2>
         My name is Ihor. I like to code
-    </p>
+    </h2>
+    </div>
 </div>
 {% endblock %}
