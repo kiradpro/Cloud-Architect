@@ -7,16 +7,9 @@
 	text-decoration: none;
 	outline: 0;
 }
-body
-{
-	overflow: hidden;
+main{
+	padding-top: 50px;
 }
-main
-{
-	overflow-y: auto;
-	height: 600px;
-}
-
 .head > h1 
 {
 	font-size: 42px;
@@ -70,12 +63,12 @@ footer p
 {
 	margin-bottom: 30px;
 }
-main::-webkit-scrollbar 
+body::-webkit-scrollbar 
 {
 	width: 14px;
 	background: white;
 }
-main::-webkit-scrollbar-thumb 
+body::-webkit-scrollbar-thumb 
 {
     border-radius: 20px;
 	background-color: #A4A4A4;
