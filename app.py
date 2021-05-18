@@ -7,7 +7,7 @@ from AzureDB import AzureDB
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'sdfdgfhkjhe48wwkdr235v4l6b70inkb6v5c'
+
 
 
 @app.route('/')
