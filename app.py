@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import render_template
 from flask import abort, redirect, url_for, make_response, flash
-from azuredb import AzureDB
+from azuredatabase import AzureDB
 
 
 
