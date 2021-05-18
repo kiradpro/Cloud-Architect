@@ -1,4 +1,4 @@
-AZDBSERVER = 'tcp:flaskserver10.database.windows.net'
+AZDBSERVER = 'flaskserver10.database.windows.net'
 AZDBNAME = 'Flaskapp' 
 AZDBUSER = 'adminf' 
 AZDBPW = 'Inf.00000001' 
