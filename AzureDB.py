@@ -1,7 +1,5 @@
 from datetime import datetime
 import pypyodbc
-import time
-import math
 
 import azurecred
 
