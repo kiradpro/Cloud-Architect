@@ -10,18 +10,20 @@ Update
   {% for cat, msg in get_flashed_messages(True) %}
   <div class="flash {{cat}}">{{msg}}</div>
   {% endfor %}
+  {% for result in data %}
 <form class="form-signin" method="POST">
     <div class="form-floating">
-        <input type="text" class="form-control" name="nickname" id="floatingNickname" value="{{article.name}}" placeholder="Nickname">
+        <input type="text" class="form-control" name="nickname" id="floatingNickname" value="{{result.name}}" placeholder="Nickname">
         <label for="floatingNickname">Nickname</label>
     </div>
     <div class="form-floating">
-      <textarea class="form-control" name="text" id="floatingComment" placeholder="Comment">{{article.text}}</textarea>
+      <textarea style="min-height: 200px;" class="form-control" name="text" id="floatingComment" placeholder="Comment">{{result.text}}</textarea>
       <label for="floatingComment">Comment</label>
     </div>
 
     <button class="w-100 btn btn-lg btn-primary" type="submit">Update</button>
   </form>
+  {% endfor %}
   <p class="repositories">You can check my repositories on <span class="link"><a href="https://github.com/kiradpro">Github</a></span></p>
 </div>
 {% endblock %}
