@@ -12,9 +12,12 @@ import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'sdfdgfhkjhe48wwkdr235v4l6b70inkb6v5c'
 app.secret_key = secrets.token_hex(16)
-os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '0'
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
-
+#localhost client id: 526a3b8734481dd38821
+#localhost client secret: f3fc22a19b56c6a940840662be802590429509a7
+#azure client id: efd90bd904602c820fd0
+#azure client secret: 8df76e152b30f3b197daf10f79f5e6041e14366e
 github_blueprint = make_github_blueprint(
     client_id="efd90bd904602c820fd0",
     client_secret="8df76e152b30f3b197daf10f79f5e6041e14366e",
