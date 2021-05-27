@@ -1,5 +1,5 @@
-AZDBSERVER = 'flaskserver10.database.windows.net'
-AZDBNAME = 'Flaskapp' 
+AZDBSERVER = 'flaskdb10.database.windows.net'
+AZDBNAME = 'FkaskDB' 
 AZDBUSER = 'adminf' 
 AZDBPW = 'Inf.00000001' 
 AZDBDRIVER = '{ODBC Driver 17 for SQL Server}'
